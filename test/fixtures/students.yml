@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  edad: 1
+  celular: MyString
+  rango: MyString
+
+two:
+  nombre: MyString
+  edad: 1
+  celular: MyString
+  rango: MyString

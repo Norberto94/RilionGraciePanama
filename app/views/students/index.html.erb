@@ -1,0 +1,24 @@
+<h1>Estudiantes</h1>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Cumpleaños</th>
+    <th>Teléfono celular</th>
+    <th>Cinturón</th>
+    <th>Email</th>
+  </tr>
+
+  <% @students.each do |student| %>
+    <tr>
+      <td><%= student.nombre %></td>
+      <td><%= student.fecha_de_nacimiento %></td>
+      <td><%= student.celular %></td>
+      <td><%= student.rango %></td>
+      <td><%= student.email %></td>
+      <td><%= link_to 'Editar', edit_student_path(student) %></td>
+      <td><%= link_to 'Borrar', student_path(student),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
