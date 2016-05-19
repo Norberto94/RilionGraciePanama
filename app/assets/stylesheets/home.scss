@@ -36,24 +36,24 @@ div.logoImage {
 
 .fotoShow {
   width: 850px;
-  height: 650px;
+  height: 640px;
+  margin-top: -8px;
 }
 
 #homeLinks {
   width: 1000px;
   max-height: 650px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-right: 10px;
   float: right;
   float: top;
 }
 
-
-
 .homeLinksBox {
   width: 333.33px;
   height: 325px;
   float: left;
+  margin-top: -8px;
 }
 
 #jj {
@@ -84,4 +84,11 @@ div.logoImage {
   float: left;
   margin-top: 20px;
   margin-left: 10px;
+}
+
+footer div {
+  width:100%;
+  height: 220px;
+  background-color: black;
+  float: bottom;
 }
