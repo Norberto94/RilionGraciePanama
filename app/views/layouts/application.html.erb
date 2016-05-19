@@ -8,26 +8,35 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="../assets/javascripts/home.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" <%= link_to 'Rilion Gracie Panamá', root_path %></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><%= link_to 'Estudiantes', controller: 'students' %></li>
-      <li><%= link_to 'Nuevo Estudiante', new_student_path %></li>
-      <li><%= link_to 'Horarios', :action => "index" %></li>
-      <li><%= link_to 'BJJ Kids', :action => "index" %></li>
-      <li><%= link_to 'TactFit', :action => "index" %></li>
-      <li><%= link_to 'Contacto', :action => "index" %></li>
-    </ul>
-  </div>
+    <a class="navbar-brand" <%= link_to 'Rilion Gracie Panamá', root_path %></a>
+    <div class="logoImage"></div>
+    <div id="redStripe"></div>
 </nav>
 
-<%= yield %>
+<div class="clearfix">
+  <div id="slideShowHome">
+  <%= image_tag("fotoSlideShow4.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow5.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow6.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow7.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow8.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow9.jpg", class: "fotoShow") %>
+  <%= image_tag("fotoSlideShow10.jpg", class: "fotoShow") %>
+</div>
+
+  <section id="homeLinks">
+    <div class="homeLinksBox" id="jj"></div>
+    <div class="homeLinksBox" id="bjjkids"></div>
+    <div class="homeLinksBox" id="tactfit"></div>
+    <div class="homeLinksBox" id="profesores"></div>
+    <div class="homeLinksBox" id="costo"></div>
+    <div class="homeLinksBox" id="contacto"></div>
+  </section>
+
+</div>
 
 </body>
 </html>

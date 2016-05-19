@@ -1,3 +1,87 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  background-color: #f0682a;
+}
+
+.clearfix {
+    overflow: auto;
+    background-color: #f0682a;
+}
+
+.navbar {
+  position: relative
+}
+
+div.logoImage {
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-left: 200px;
+  position: absolute;
+  background-image:url('logo.jpg');
+  margin-top: 2px;
+}
+
+#redStripe {
+  height: 52px;
+  width: 150px;
+  background-color: red;
+  margin-left: 1580px;
+  position: absolute;
+  margin-top: -1px;
+}
+
+.fotoShow {
+  width: 850px;
+  height: 650px;
+}
+
+#homeLinks {
+  width: 1000px;
+  max-height: 650px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: right;
+  float: top;
+}
+
+
+
+.homeLinksBox {
+  width: 333.33px;
+  height: 325px;
+  float: left;
+}
+
+#jj {
+  background-color: red;
+}
+
+#bjjkids {
+  background-color: yellow;
+}
+
+#tactfit {
+  background-color: green;
+}
+
+#contacto {
+  background-color: blue;
+}
+
+#profesores {
+  background-color: grey;
+}
+
+#costo {
+  background-color: purple;
+}
+
+#slideShowHome {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}

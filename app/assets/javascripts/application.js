@@ -14,17 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-slideShow();
-var slideIndex = 0;
 
-function slideShow(){
-  var i;
-  var pictures = document.getElementByClassName('fotosShow');
-  for(i = 0; i < x.length; i++){
-    pictures[i].style.display = "none";
+// crea el slide show de home
+$(document).ready(function(){
+
+  slideShow();
+  var slideIndex = 0;
+
+  function slideShow(){
+    var i;
+    var pictures = document.getElementsByClassName('fotoShow');
+
+    for(i = 0; i < pictures.length; i++){
+      $(pictures[i]).hide();
+    };
+
+    slideIndex++;
+    if(slideIndex > pictures.length) {slideIndex = 1};
+    $(pictures[slideIndex-1]).show();
+    setTimeout(slideShow, 1500); // cambia foto cada 1.5 segundos
   };
-  slideIndex++;
-  if(slideIndex > pictures.length) {slideIndex = 1}
-  pictures[slideIndex-1].style.display = "block";
-  setTimeout(slideShow, 3000); // cambia foto cada 3 segundos
-};
+});
+
+
+
